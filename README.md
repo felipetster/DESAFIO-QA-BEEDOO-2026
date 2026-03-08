@@ -8,7 +8,7 @@ Garantir uma experiência fluida e sem atritos no fluxo base (CRUD) é o primeir
 
 Para visualizar a modelagem completa dos testes, o dashboard executivo e as evidências (vídeos e capturas de tela), acesse os links abaixo:
 
-* **[Planilha de Casos de Teste e Bugs (Google Sheets)](https://docs.google.com/spreadsheets/d/16erjL92i2tdmKGA22FcGsY0swQR2CxbEHv-HJGO0SyY/edit?usp=sharing))**
+* **[Planilha de Casos de Teste e Bugs (Google Sheets)](https://docs.google.com/spreadsheets/d/16erjL92i2tdmKGA22FcGsY0swQR2CxbEHv-HJGO0SyY/edit?usp=sharing)**
 * **[Pasta de Evidências (Google Drive)](https://drive.google.com/drive/folders/1-pdh3Yrm_jhBf8aPC1r1A5zpfBYMkseo?usp=sharing)**
 
 ---
