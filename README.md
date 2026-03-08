@@ -1,6 +1,6 @@
-# 🎓 DESAFIO QA - BEEDOO 2026
+# DESAFIO QA - BEEDOO 2026
 
-## 📋 Informações do Candidato
+## Informações do Candidato
 
 **Nome:** Felipe Castro  
 **Data de Realização:** 06/03/2026  
@@ -9,7 +9,7 @@
 
 ---
 
-## 🎯 Sumário
+##  Sumário
 
 1. [Análise da Aplicação](#-análise-da-aplicação)
 2. [Estratégia de Testes](#-estratégia-de-testes)
@@ -18,7 +18,6 @@
 5. [Evidências](#-evidências)
 6. [Conclusão](#-conclusão)
 
----
 ---
 
 ## Recursos Principais
@@ -263,7 +262,34 @@ Priorizei funcionalidades core primeiro. Os 3 casos de UX cobrem:
 
 ---
 
-**Relatório Completo de Bugs:** Todos os 14 bugs estão documentados detalhadamente na planilha com título, passos, impacto, severidade e evidências.
+### Principais Bugs Encontrados (Top 3)
+
+Abaixo estão os três principais defeitos críticos identificados, formatados para abertura de tickets. *A lista completa com os 14 bugs e suas respectivas evidências encontra-se na Planilha de Casos de Teste.*
+
+#### 1. [Listagem] Falso Positivo na exclusão de cursos
+* **Passos para reproduzir:** 1. Acessar a página de Listagem de Cursos.
+  2. Clicar no botão "Excluir Curso" em qualquer card existente.
+  3. Atualizar a página (F5).
+* **Resultado atual:** O sistema exibe um alerta de sucesso ("Curso excluído"), mas o curso continua existindo na listagem e no banco de dados.
+* **Resultado esperado:** O curso deve ser permanentemente removido do banco de dados e desaparecer da interface.
+* **Severidade:** Alta
+
+#### 2. [Segurança] Ausência de limite de caracteres (Maxlength) quebra a interface
+* **Passos para reproduzir:** 1. Acessar a página de Cadastrar Curso.
+  2. Inserir uma string massiva (ex: 5000 caracteres) no campo "Nome do curso".
+  3. Clicar em Salvar e acessar a Listagem.
+* **Resultado atual:** O sistema aceita a carga massiva sem bloqueio. Na listagem, o texto gigante vaza do card e quebra o layout da tela.
+* **Resultado esperado:** O campo "Nome do curso" deve ter uma trava de limite (ex: `maxlength="100"`).
+* **Severidade:** Alta
+
+#### 3. [Cadastro] Validação numérica ausente permite cursos com 0 vagas
+* **Passos para reproduzir:** 1. Acessar a página de Cadastrar Curso.
+  2. Preencher os dados e inserir `0` (zero) no campo "Vagas".
+  3. Clicar em Salvar.
+* **Resultado atual:** O sistema aceita o valor inválido e conclui o cadastro silenciosamente.
+* **Resultado esperado:** O sistema deve bloquear a submissão e exibir uma mensagem de erro exigindo no mínimo 1 vaga.
+* **Severidade:** Média
+
 
 ---
 
@@ -314,7 +340,7 @@ Todas as evidências foram organizadas em **Google Drive** com a seguinte estrut
 
 ---
 
-## 📝 Conclusão
+## Conclusão
 
 ### Visão Geral da Qualidade
 
@@ -375,9 +401,7 @@ A aplicação apresenta **taxa de defeitos de 64%** (14 bugs em 22 casos de test
 
 ## Uso de Inteligência Artificial
 
-Durante este desafio, utilizei Claude como ferramenta de apoio para:
-
-### Como usei a IA:
+Durante este desafio, utilizei Claude como ferramenta de apoio:
 
    - Solicitei sugestões de formato de README
    - Pedi exemplos de boas práticas de documentação de testes
@@ -397,5 +421,5 @@ Profissional de QA com experiência em análise manual, automação de testes e 
 
 **Contato:**  
 [felipe.c.lima1604@gmail.com]  
-[LinkedIn](https://linkedin/in/felipetster)  
+[LinkedIn](https://www.linkedin.com/in/felipetster/)  
 [GitHub](https://github.com/felipetster)
