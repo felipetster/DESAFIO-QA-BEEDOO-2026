@@ -3,7 +3,7 @@
 ## Informações do Candidato
 
 **Nome:** Felipe Castro  
-**Data de Realização:** 06/03/2026  
+**Data de Realização:** 08/03/2026  
 **Repositório:** [DESAFIO-QA-BEEDOO-2026](https://github.com/felipetster/DESAFIO-QA-BEEDOO-2026)  
 **Aplicação Testada:** [Beedoo QA Challenge](https://creative-sherbet-a51eac.netlify.app/)
 
